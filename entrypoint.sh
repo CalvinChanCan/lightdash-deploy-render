@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
 
-yarn workspace backend migrate-production
+pnpm --filter backend migrate-production
 
 exec "$@"
